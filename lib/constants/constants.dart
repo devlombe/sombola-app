@@ -7,5 +7,6 @@ const kWhite = Color(0xffffffff);
 
 // Optional: set these to your GitHub raw URLs for model and labels
 // Example: https://raw.githubusercontent.com/<user>/<repo>/<commit>/path/to/model.tflite
-const String? kRemoteModelUrl = null;
-const String? kRemoteLabelsUrl = null;
+const String? kRemoteModelUrl = https://github.com/devlombe/sombola-app/blob/main/assets/model/model_fp16.tflite;
+const String? kRemoteLabelsUrl = https://github.com/devlombe/sombola-app/blob/main/assets/model/labels.txt
+const String? kRemoteDiseaseUrl = https://github.com/devlombe/sombola-app/blob/main/assets/model/disease_info_by_label.json;
