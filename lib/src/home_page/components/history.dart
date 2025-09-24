@@ -39,7 +39,7 @@ class HistorySection extends SliverFixedExtentList {
                           )),
                     );
                   } else {
-                    return _returnNothingToShow(size);
+                    return _returnNothingToShow(context, size);
                   }
                 },
               );
@@ -132,7 +132,7 @@ Widget _returnHistoryContainer(Disease disease, BuildContext context,
   );
 }
 
-Widget _returnNothingToShow(Size size) {
+Widget _returnNothingToShow(BuildContext context, Size size) {
   return Padding(
     padding: EdgeInsets.fromLTRB((0.053 * size.height * 0.3),
         (0.053 * size.height * 0.3), (0.053 * size.height * 0.3), 0),

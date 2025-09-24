@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
             elevation: 4,
             shape: StadiumBorder(),
           ),
-          cardTheme: CardTheme(
+          cardTheme: CardThemeData(
             elevation: 2,
             margin: const EdgeInsets.all(12),
             shape: RoundedRectangleBorder(

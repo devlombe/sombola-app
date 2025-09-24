@@ -20,9 +20,9 @@ tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
 
-// Ensure Gradle uses JDK 17 toolchain for AGP compatibility even if JDK 22 is installed
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
-    }
+// Compatibility shim for older plugins expecting the deprecated 'compile' configuration
+subprojects {
+    configurations.maybeCreate("compile")
 }
+
+// Remove legacy tflite plugin customizations; using tflite_flutter instead
